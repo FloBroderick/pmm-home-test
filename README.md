@@ -18,7 +18,7 @@ The first step is to import the required datasets into your CARTO account. Pleas
 
 There are 5 datasets you need to import:
 
-1. [pmm_madrid_demographics.csv]()
+1. [pmm_madrid_demographics.csv](https://github.com/CartoDB/pmm-home-test/blob/master/datasets/pmm_madrid_demographics.csv?raw=true)
   * `cartodb_id`: Row identifier (ignore)
   * `the_geom`: Row geometry (ignore)
   * `name`: Region identifier (ignore)
@@ -28,24 +28,24 @@ There are 5 datasets you need to import:
   * `total_pop`: Total population in the region
   * `total_pop_density`: : Total population in the region, normalized by the area
 
-2. [pmm_madrid_metro_lines.csv]()
+2. [pmm_madrid_metro_lines.csv](https://github.com/CartoDB/pmm-home-test/blob/master/datasets/pmm_madrid_metro_lines.csv?raw=true)
   * `cartodb_id`: Row identifier (ignore)
   * `the_geom`: Row geometry (ignore)
   * `name`: Name of the metro line
 
-3. [pmm_madrid_metro_stops.csv]()
+3. [pmm_madrid_metro_stops.csv](https://github.com/CartoDB/pmm-home-test/blob/master/datasets/pmm_madrid_metro_stops.csv?raw=true)
   * `cartodb_id`: Row identifier (ignore)
   * `the_geom`: Row geometry (ignore)
   * `name`: Name of the metro station
   * `line`: Name of the metro line
 
-4. [pmm_madrid_pois.csv]()
+4. [pmm_madrid_pois.csv](https://github.com/CartoDB/pmm-home-test/blob/master/datasets/pmm_madrid_pois.csv?raw=true)
   * `cartodb_id`: Row identifier (ignore)
   * `the_geom`: Row geometry (ignore)
   * `amenity`: Type of POI
   * `name`: Name of POI
 
-5. [pmm_madrid_real_estate.csv]()
+5. [pmm_madrid_real_estate.csv](https://github.com/CartoDB/pmm-home-test/blob/master/datasets/pmm_madrid_real_estate.csv?raw=true)
   * `cartodb_id`: Row identifier (ignore)
   * `the_geom`: Row geometry (ignore)
   * `name`: Region name
