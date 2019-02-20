@@ -52,6 +52,10 @@ There are 5 datasets you need to import:
   * `month_rental`: Average monthly rent in the region
   * `sqm_rental`: Average monthly rent per square meter in the region
 
+For each of them, copy the URL and use Builder's new dataset dialog to get the import done:
+
+![Import datasets](img/import.png?raw=true)
+
 After one dataset is imported, it typically helps to preview it to verify everything looks good.
 
 ### Create the map
