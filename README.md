@@ -1,20 +1,20 @@
-# Site selection home test
+# Site Selection take-home test
 
 ## Introduction
 
-This home test tries to simulate a site selection dashboard created with CARTO's Builder tool. You want to explore the Madrid area, trying to find good spots to locate your new restaurant. You will look at density of eating places from a POI ("Points Of Interest") dataset, rental prices from a Real Estate dataset, demographics and closeness to metro lines and stations.
+This take-home test will allow you to create a site selection dashboard in CARTO Builder, one of the core components of the CARTO platform. In this example you need to put yourself in the shoes of a Retailer in the Madrid area, trying to find prime locations to locate a new restaurant. You will look at the density of eating places from a POI ("Points Of Interest") dataset, rental prices from a Real Estate dataset, demographics and proximity to metro lines and stations.
 
-Your final delivery will be the dashboard itself and a blog post where you will explain the use case behind the dashboard and the methodology you used to locate one (or several) good spots to open a new restaurant.
+Your final delivery will be the dashboard itself and a blog post (of between 600 and 800 words) where you will explain the use case behind the dashboard and the methodology you used to locate one (or several) good spots to open a new restaurant.
 
 ## Script
 
-We will run you through a script that will help you build such dashboard. The script is not comprehensive in certain sections. That is on purpose. Please refer to [CARTO's Help Center](https://carto.com/help/) should you need additional guidance, or reach out to us.
+We will run you through a script that will help you build such a dashboard. The script is not comprehensive in certain sections, deliberately :) Please refer to [CARTO's Help Center](https://carto.com/help/) if you need additional guidance.
 
-The script is just a guide, feel free to make your own adjustments.
+The script is just a guide, so feel free to make your own adjustments or bring in additional data sets that can help you tell the story of how Location Intelligence and CARTO's product is applicable to this use case. 
 
-### Import the datasets into your CARTO account
+### Import the data sets into your CARTO account
 
-The first step is to import the required datasets into your CARTO account. Please, let us know if you were not given a trial CARTO account as part of the hiring process.
+The first step is to import the required data sets into your CARTO account. You will have been given a trial CARTO account as part of the hiring process.
 
 There are 5 datasets you need to import:
 
@@ -52,7 +52,7 @@ There are 5 datasets you need to import:
   * `month_rental`: Average monthly rent in the region
   * `sqm_rental`: Average monthly rent per square meter in the region
 
-For each of them, copy the URL and use Builder's new dataset dialog to get the import done:
+For each of them, copy the URL and use Builder's new data set dialog to get the import done:
 
 ![Import datasets](img/import.png?raw=true)
 
@@ -70,7 +70,7 @@ It is advisable to rename the map and the layers, for the sake of clarity.
 
 ### Style metro layers
 
-Now it is time to start styling the layers. We will start with the metro stations and metro lines layers. We recommend you hide the rest of the layers while working on this.
+Now it is time to start styling the layers. We will start with the metro stations and metro lines layers, and we recommend you hide the rest of the layers while working on this.
 
 In Builder, click on the metro stations layer and go to the `STYLE` tab. Select `By value` on the `POINT COLOR` subsection, using `line` as the column name, and pick a color scheme.
 
@@ -249,7 +249,7 @@ Finally, make the stations and lines clickable by adding pop-ups to both layers,
 
 ### Create catchment areas around metro stations
 
-We are interested in studying the areas that are close to metro stations, as we acknowledge their commercial potential.
+We are interested in studying the areas that are close to metro stations, as we try to understand their commercial potential.
 
 Ideally, we would be interested in defining the boundaries of those areas based on whether it takes less than a 5-minute walk to get there. Because of technical limitations on the trial CARTO accounts, it is safer to use plain distance in meters. So we would approximate those areas and use 250m-radius circles ("buffers") instead.
 
@@ -379,4 +379,4 @@ Your dashboard should look similar to this:
 
 ![Final dashboard](img/dashboard.png?raw=true)
 
-Now play with the widgets, filter here and there and come up with a good story on how you found great spots for new restaurants.
+Now play with the widgets, filter here and there and come up with a good story on how you found great spots for new restaurants. Once this is complete, please email a link to your dashboard and your blog post document to justyna@carto.com so we can evaluate your work. Happy mapping and writing! 
